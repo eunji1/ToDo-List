@@ -57,7 +57,7 @@ function removeOne(event) {
 }
 
 function init() {
-    for (index in toDos) {
+    for (let index in toDos) {
         let stringList = (toDos[index]);
         let valueText = stringList[Object.keys(stringList)[0]];
         let valueId = stringList[Object.keys(stringList)[1]];
