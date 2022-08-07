@@ -10,37 +10,68 @@ h1{
     font-weight: 500;
     font-display: inherit;
     margin: 10px;
+    margin-bottom: 30px;
     padding-top: 40px;
     text-align: center;
 }
-#input{
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
     border-radius: 10px;
-    padding: 10px;
-    margin-left: 10%;
-    width: 70%;
-
+    max-width: 700px;
+    width: 400px;
+    height: 45px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: black;
 }
+#form input{
+    width: 300px;
+    background-color: transparent;
+    border-style: none;
+    color: filedtext;
+}
+#form button{
+    background-color: white;
+}
+
 button{
     background-color: rgb(223, 235, 235);
     color: black;
-    border: 2px solid gray;
-    border-radius: 10%;
-    padding: 5px;
-    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 5px;
+    font-weight: 700;
 }
-p{
-    font-size: 40px;
-    font-style:oblique;
-    color: white;
-    text-decoration:dashed;
-    background-color: darkcyan;
-    padding-left: 10%;
-    margin: 10px 0 10px 0;
-}
-div{
-    background-color: rgb(119, 190, 190);
-    margin: 50px 30% 10px 30%;
+#todo-list{
+    background-color: rgb( 0, 0, 0, 0.6);
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 400px;
     text-align: left;
     font-size: 30px;
+
+}
+#todo-list p{
+    font-size: 30px;
+    margin: 15px;
+    color: rgba(195, 208, 208, 0.796);
+    text-decoration: dashed;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(195, 208, 208, 0.796);
+    box-shadow: 0px 4px 4px black;
 
 }
