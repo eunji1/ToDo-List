@@ -6,12 +6,16 @@ class Component {
   constructor(target, props) {
     this.target = target;
     this.props = props;
-    this.rendering();
+    this.setUp();
+    this.render();
+    this.setEvent();
   }
+
+  setUp() {}
   template() {
     return "";
   }
-  rendering() {
+  render() {
     this.target.innerHTML = this.template();
     this.componentDidMount();
   }
@@ -19,7 +23,7 @@ class Component {
 
   setState(newState) {
     this.state = newState;
-    this.rendering();
+    this.render();
   }
   componentDidMount() {}
 }
