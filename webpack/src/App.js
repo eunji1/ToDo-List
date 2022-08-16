@@ -2,18 +2,22 @@ import Button from "./Components/Button";
 import Component from "./Components/Core";
 
 class App extends Component {
+    setup() {
+        this.state = ''
+    }
     template() {
         return `<form data-component = '#input'></form>`
     }
     ComponentDidMount() {
         const formInput = this.target.querySelector('[data-component = "#input"]')
- 
+        formInput.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            clickButton();
+        })
     }
 }
 
 clickButton() {
-    let li = document.createElement("li");
-    let removeBtn = document.createElement("button");
 
     li.innerHTML = input.value;
     removeBtn.innerText = "삭제";
