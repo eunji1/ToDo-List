@@ -1,4 +1,4 @@
-import Button from "./Components/Button";
+import Input from "./Components/Input";
 import Component from "./Components/Core";
 
 class App extends Component {
@@ -6,29 +6,20 @@ class App extends Component {
         this.state = ''
     }
     template() {
-        return `<form data-component = '#input'></form>`
+        return `<form data-component = 'Input'></form>`
     }
     ComponentDidMount() {
-        const formInput = this.target.querySelector('[data-component = "#input"]')
+        const formInput = this.target.querySelector('[data-component = "Input"]')
+        clickButton() {
+            let toDoObj = {
+                text: formInput.value,
+                id: num
+            };
+            // toDos.push(toDoObj);   
+        }  
         formInput.addEventListener("submit", (e)=>{
             e.preventDefault();
             clickButton();
         })
     }
-}
-
-clickButton() {
-
-    li.innerHTML = input.value;
-    removeBtn.innerText = "삭제";
-    // removeBtn.addEventListener("click", removeOne);
-    li.appendChild(removeBtn);
-    list.appendChild(li);
-    li.setAttribute("id", num);
-    let toDoObj = {
-        text: input.value,
-        id: num,
-    };
-    toDos.push(toDoObj);
-    
 }
