@@ -4,10 +4,8 @@ class Title extends Component {
   template() {
     return `<div>${this.props}</div>`;
   }
-
-  rendering() {
+  render() {
     this.target.innerHTML += this.template();
   }
 }
-
 export default Title;

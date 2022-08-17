@@ -1,7 +1,7 @@
 class Component {
+  target;
   state;
   props;
-  target;
 
   constructor(target, props) {
     this.target = target;
@@ -10,7 +10,6 @@ class Component {
     this.render();
     this.setEvent();
   }
-
   setUp() {}
   template() {
     return "";
@@ -19,12 +18,12 @@ class Component {
     this.target.innerHTML = this.template();
     this.componentDidMount();
   }
-  setEvent() {}
-
+  componentDidMount() {}
   setState(newState) {
     this.state = newState;
     this.render();
   }
-  componentDidMount() {}
+  setEvent() {}
 }
+
 export default Component;

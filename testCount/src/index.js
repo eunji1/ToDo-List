@@ -8,24 +8,22 @@ class App extends Component {
   }
   template() {
     return `
-            <div data-component="Title"></div>
-            <div data-component="Button"></div>
+        <div data-component="Title"></div>
+        <div data-component="Button"></div>
         `;
   }
   componentDidMount() {
     const TitleTarget = document.querySelector('[data-component="Title"]');
     const ButtonTarget = document.querySelector('[data-component="Button"]');
 
-    const onclickEvent = (operartor) => {
-      if (operartor === "+") this.setState(this.state + 1);
+    const onclickEvent = (operator) => {
+      if (operator === "+") this.setState(this.state + 1);
       else this.setState(this.state - 1);
     };
 
-    new Button(ButtonTarget, onclickEvent);
     new Title(TitleTarget, this.state);
+    new Button(ButtonTarget, onclickEvent);
   }
 }
 
 const AppComponent = new App(document.querySelector("#App"));
-
-// setInterval(() => console.log(counter), 2000);
