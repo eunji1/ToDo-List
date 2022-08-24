@@ -1,0 +1,45 @@
+.App {
+  display: block;
+  background-color: white;
+  width: 792px;
+  height: 808px;
+  margin: 100px auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+#Title {
+  width: 636px;
+  height: 80px;
+  margin: 70px auto;
+  border: 1px solid red;
+}
+
+#Title h1 {
+  color: #FCCB79;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+#form {
+  width: 538px;
+  height: 51px;
+  margin: 30px auto;
+  
+}
+#input{
+  width: 428px;
+  border: 0;
+  border-bottom: 2px solid #FCCB79;
+  vertical-align: bottom;
+  padding: 10px;
+}
+#button{
+  width: 60px;
+  height: 36px;
+  margin-left: 30px;
+  vertical-align: bottom;
+}
