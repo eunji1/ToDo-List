@@ -4,8 +4,9 @@ import styled from "styled-components";
 const InputStyle = styled.input`
   width: 428px;
   border: 0;
-  border-radius: 8px;
-  border-bottom: 2px solid #fccb79;
+
+  border-bottom: 3px solid #fccb79;
+  background-color: #f5f5f5f5;
 `;
 
 const Input = () => {

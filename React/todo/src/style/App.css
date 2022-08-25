@@ -9,21 +9,6 @@
   border-radius: 16px;
 }
 
-#Title {
-  width: 636px;
-  height: 80px;
-  margin: 70px auto;
-  border: 1px solid red;
-}
-
-#Title h1 {
-  color: #FCCB79;
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  
-}
-
 #form {
   width: 538px;
   height: 51px;
@@ -38,4 +23,9 @@
 #button{
   margin-left: 30px;
   vertical-align: bottom;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+
 }
