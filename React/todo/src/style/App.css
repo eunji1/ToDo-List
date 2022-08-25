@@ -1,6 +1,6 @@
 .App {
   display: block;
-  background-color: white;
+  background-color: #F5F5F5;
   width: 792px;
   height: 808px;
   margin: 100px auto;
@@ -33,6 +33,7 @@
 #input{
   width: 428px;
   border: 0;
+  border-radius: 8px;
   border-bottom: 2px solid #FCCB79;
   vertical-align: bottom;
   padding: 10px;

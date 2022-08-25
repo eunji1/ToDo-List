@@ -1,4 +1,7 @@
 import React from "react";
+import Button from "./Components/Button";
+import Input from "./Components/Input";
+import List from "./Components/List";
 import "./style/App.css";
 
 function App() {
@@ -9,20 +12,10 @@ function App() {
           <h1>TODO LIST</h1>
         </div>
         <form id="form">
-          <input
-            type="text"
-            id="input"
-            placeholder="할 일을 추가해주세요."
-          ></input>
-          <button type="button" id="button">
-            입력
-          </button>
+          <Input />
+          <Button />
         </form>
-
-        <div id="todo-list">
-          <ul id="list"></ul>
-          <li>투두 리스트 만들기</li>
-        </div>
+        <List />
       </div>
     </>
   );

@@ -1,14 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import styled from "styled-components";
+import { FiSend } from "react-icons/fi";
 
-const index = props => {
+const Button = (props) => {
   return (
-    <div>index</div>
-  )
-}
+    <button type="button" id="button">
+      <FiSend className="sendIcon" />
+    </button>
+  );
+};
 
-index.propTypes = {
-    content: PropTypes.string.isRequired
-}
-
-export default index
+export default Button;
