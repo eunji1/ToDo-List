@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "./Components/Title";
 import Button from "./Components/Button";
 import Input from "./Components/Input";
 import List from "./Components/List";
@@ -7,10 +8,8 @@ import "./style/App.css";
 function App() {
   return (
     <>
-      <div className="App">
-        <div id="Title">
-          <h1>TODO LIST</h1>
-        </div>
+      <div className="todolist">
+        <Title />
         <form id="form">
           <Input />
           <Button />
