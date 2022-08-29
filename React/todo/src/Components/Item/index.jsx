@@ -9,6 +9,8 @@ const Item = ({ todo, onDelete }) => {
   const handleChecked = (e) => {
     if (e.target.checked) {
       setOnChecked(true);
+    } else {
+      setOnChecked(false);
     }
   };
 

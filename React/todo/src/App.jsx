@@ -1,10 +1,9 @@
 import React, { useState, useRef } from "react";
+import ListStyled from "./Components/List/ListStyle";
+import Wrapper from "./Components/Wrapper/Wrapper";
 import Title from "./Components/Title";
 import Insert from "./Components/Insert";
 import List from "./Components/List";
-import "./style/App.css";
-import ListStyled from "./Components/List/ListStyle";
-import Wrapper from "./Components/Wrapper/Wrapper";
 
 function App() {
   const [todos, setTodos] = useState([]);
