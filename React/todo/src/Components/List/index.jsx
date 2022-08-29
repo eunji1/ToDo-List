@@ -1,16 +1,13 @@
 import React from "react";
-// import styled from "styled-components";
 import Item from "../Item";
-import ListStyled from "./ListPresent";
 
-const List = (props) => {
+const List = ({ todos, onDelete }) => {
   return (
-    <ListStyled>
-      <ul id="list">
-        <Item />
-        <Item />
-      </ul>
-    </ListStyled>
+    <>
+      {todos.map((todo) => (
+        <Item todo={todo} key={todo.id} onDelete={onDelete} />
+      ))}
+    </>
   );
 };
 
