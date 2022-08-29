@@ -1,31 +1,4 @@
-.todolist {
-  display: block;
-  background-color: #F5F5F5;
-  width: 792px;
-  height: 808px;
-  margin: 100px auto;
-  margin-top: 100px;
-  text-align: center;
-  border-radius: 16px;
-}
 
-#form {
-  width: 538px;
-  height: 51px;
-  margin: 30px auto;
-  
-}
-#input{
 
-  vertical-align: bottom;
-  padding: 10px;
-}
-#button{
-  margin-left: 30px;
-  vertical-align: bottom;
-}
-li{
-  display: flex;
-  justify-content: space-between;
 
-}
+
