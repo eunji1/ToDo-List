@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "../Item";
+import PropTypes from "prop-types";
 
 const List = ({ todos, onDelete }) => {
   return (
@@ -12,3 +13,8 @@ const List = ({ todos, onDelete }) => {
 };
 
 export default List;
+
+List.propTypes = {
+  todos: PropTypes.object.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};

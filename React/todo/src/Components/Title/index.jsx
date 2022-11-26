@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleStyled, TodoStyle } from "./TitleStyle";
+import { TitleStyled, TodoStyle } from "./TitlePresent";
 const Title = () => {
   return (
     <TitleStyled>

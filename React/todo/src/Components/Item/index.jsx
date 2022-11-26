@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
-import { ItemStyled, CheckStyle, TextStyle, DelStyle } from "./ItemStyle";
+import PropTypes from "prop-types";
+import { ItemStyled, CheckStyle, TextStyle, DelStyle } from "./ItemPresent";
 
 const Item = ({ todo, onDelete }) => {
+  // props에 todo를 구조분해 할당 해줌
   const { id, text } = todo; // eslint-disable-line no-unused-vars
   const [onChecked, setOnChecked] = useState(false);
 
@@ -35,3 +36,8 @@ const Item = ({ todo, onDelete }) => {
 };
 
 export default Item;
+
+Item.propTypes = {
+  todo: PropTypes.object.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};

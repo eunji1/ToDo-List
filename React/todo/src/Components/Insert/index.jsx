@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
 import { FiSend } from "react-icons/fi";
-import { InputStyled, ButtonStyled, InsertStyled } from "./InsertStyle";
+import { InputStyled, ButtonStyled, InsertStyled } from "./InsertPresent";
 
 const Insert = (props) => {
   const [content, setContent] = useState("");
@@ -17,17 +18,19 @@ const Insert = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!content) return;
+    // 공백만 있는 내용은 거르지 못하네요
     props.onSubmit(content);
     setContent("");
   };
 
+  // useEffect
   useEffect(() => {
     ref.current.focus();
   }, []);
 
   return (
     <>
-      <InsertStyled id="form" onSubmit={props.handleSubmit}>
+      <InsertStyled onSubmit={props.handleSubmit}>
         <InputStyled
           onChange={handleChange}
           value={content}
@@ -43,3 +46,7 @@ const Insert = (props) => {
 };
 
 export default Insert;
+
+Insert.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
